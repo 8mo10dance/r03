@@ -1,5 +1,6 @@
 class ResearchesController < ApplicationController
-  def index
-    @researches = Research.all
+  def index(q: {})
+    @q = Research.ransack(q)
+    @researches = @q.result
   end
 end
