@@ -79,6 +79,7 @@ GEM
     childprocess (3.0.0)
     concurrent-ruby (1.1.8)
     crass (1.0.6)
+    diffy (3.4.0)
     erubi (1.10.0)
     ffi (1.14.2)
     globalid (0.4.2)
@@ -160,6 +161,9 @@ GEM
       ffi (~> 1.0)
     regexp_parser (2.0.3)
     rexml (3.2.5)
+    ridgepole (0.9.5)
+      activerecord (>= 5.1, < 6.2)
+      diffy
     rubocop (1.16.1)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
@@ -242,6 +246,7 @@ DEPENDENCIES
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.1)
   ransack
+  ridgepole
   rubocop-rails
   sass-rails (>= 6)
   selenium-webdriver
