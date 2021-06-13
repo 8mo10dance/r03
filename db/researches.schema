@@ -1,0 +1,4 @@
+create_table :researches, id: :bigint, unsigned: true, force: :cascade do |t|
+  t.string :title, null: false, default: ''
+  t.timestamps
+end
