@@ -1,6 +1,6 @@
 class ResearchesController < ApplicationController
-  def index(q: {})
-    @q = Research.ransack(q)
+  def index
+    @q = Research.ransack(params[:q])
     @researches = @q.result
   end
 end
